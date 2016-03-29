@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Flexbox Demo</title>
+		<style>
+
+			.container {
+				padding:5px;
+				border: 2px dashed green;
+				display:flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content:flex-start;
+				align-items:stretch;
+
+				height: 300px;
+				/*align-content:stretch;*/
+			}
+
+			.container > div {
+				border: 2px solid blue;
+				/*width:300px;*/
+				/*height:50px;*/
+				order:2;
+				flex-grow: 1;
+			}
+
+			.container > div:nth-child(2) {
+				order: 1;
+				flex-basis: 100px;
+			}
+
+			.container > div:nth-child(3) {
+				order: 1;
+				flex-grow: 2;
+			}
+
+
+		</style>
+	</head>
+	<body>
+
+		<div class="container">
+			<div>A</div>
+			<div>B</div>
+			<div>C</div>
+			<div>D</div>
+		</div>
+
+
+	</body>
+</html>
