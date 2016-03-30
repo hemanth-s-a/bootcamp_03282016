@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        .col-1 {
+            box-sizing: border-box;
+            width: 25%;
+        }
+
+        .col-2 {
+            box-sizing: border-box;
+            width: 50%;
+        }
+
+        .col-3 {
+            box-sizing: border-box;
+            width: 75%;
+        }
+
+        .col-4 {
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .first-col, .second-col, .third-col, .fourth-col {
+            position: relative;
+            float: left;
+            border: 1px solid black;
+        }
+
+        .first-col {
+        }
+
+        .second-col {
+            max-width: 75%;
+        }
+
+        .third-col {
+            max-width: 50%;
+        }
+
+        .fourth-col {
+            max-width: 25%;
+        }
+
+        .row {
+            width: 100%;
+            clear: left;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-1 second-col">
+            Hello! I'm trying this
+        </div>
+        <div class="col-2 third-col">
+            Hello! I'm trying this
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2 fourth-col">
+            Hello! I'm trying this
+        </div>
+    </div>
+</body>
+</html>

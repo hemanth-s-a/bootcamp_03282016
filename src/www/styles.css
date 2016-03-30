@@ -1,0 +1,28 @@
+#birthday {
+    font-weight: normal;
+}
+
+.critical {
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+}
+
+.floatRight {
+    float: right;
+}
+
+.floatRight img {
+    width: 200px;
+}
+
+.container {
+    position: relative;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: url("http://webneel.com/wallpaper/sites/default/files/images/08-2013/11-sea-beach-sand-wallpaper.jpg");
+}
