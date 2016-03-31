@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+var person = {};
+
+Object.defineProperty(person, "firstName", {
+    configurable: true,
+    enumerable: true,
+    value: "Julie",
+    writable: false
+});
+
+console.dir(person);
+
+for (var prop in person) {
+    console.log(prop);
+}
+
+</script>
+</body>
+</html>
