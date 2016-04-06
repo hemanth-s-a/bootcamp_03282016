@@ -16,6 +16,13 @@ const actionDecrement = () => {
     return { type: "DECREMENT" };
 };
 
+const actionChangeCounter = (counter) => {
+    return {
+        type: "CHANGE_COUNTER",
+        counter: counter
+    };
+}
+
 const reducer = (state, action) => {
     if (typeof state === "undefined") {
         state = {
@@ -30,6 +37,8 @@ const reducer = (state, action) => {
             return Object.assign({}, state, { counter: state.counter+1 });
         case "DECREMENT":
             return Object.assign({}, state, { counter: state.counter-1 });
+        case "CHANGE_COUNTER":
+            return Object.assign({}, state, { counter: action.counter });
         default:
             return state;
     }
@@ -46,6 +55,9 @@ function render() {
                 },
                 decrementCounter: () => {
                     store.dispatch(actionDecrement());
+                },
+                changeCounter: (counter) => {
+                    store.dispatch(actionChangeCounter(counter));
                 }
             }),
         document.querySelector("main"));
